@@ -1,0 +1,64 @@
+<section class="vh-100" style="background-color: #a43737;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="/assets/login-background.png"
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <form>
+                  <h3 style="font-weight: bolder;">
+                  Ingrese sus datos para iniciar sesión.
+                 </h3>
+
+                  <div class="d-flex align-items-center mb-3 pb-1">
+                    <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="email" name="email" placeholder="Correo electrónico" [(ngModel)]="userForm.email" required id="form2Example17" class="form-control form-control-lg" />
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" name="clave1" placeholder="Contraseña" [(ngModel)]="userForm.password" required id="form2Example27" class="form-control form-control-lg" />
+                  </div>
+
+                  <div class="pt-1 mb-4">
+                    <button class="btn btn-lg btn-block" type="submit" style="background-color: #a43737; color: #ffff;" (click)="login($event)" value="Iniciar">Iniciar sesión</button>
+                    <input
+                    class="btn btn-lg btn-block"
+                    style="
+                      margin: 0;
+                      padding: 5px 15px;
+                      margin: 10px;
+                      background-color: rgb(130, 39, 39);
+                      color: #fff;
+                    "
+                    type="button"
+                    value="Invitado"
+                    (click)="loadFields(1)"
+                  />
+                  <input
+                    style="margin: 0; padding: 5px 15px; margin-left: 10px; background-color: rgb(130, 39, 39);
+                      color: #fff;"
+                    type="button"
+                    class="btn btn-lg btn-block"
+                    value="Admin"
+                    (click)="loadFields(2)"
+                  />
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

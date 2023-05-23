@@ -1,0 +1,20 @@
+.quien-soy-container{
+  position: relative;
+  background-color: white;
+  width: 800px;
+  height: 800px;
+  border-radius: 50px;
+  top:70px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-perfil{
+  border-radius: 50%;
+  width: 200px;
+}
+
+.explicacion-juego{
+  margin-left: 20px;
+  margin-top: 70px;
+}
